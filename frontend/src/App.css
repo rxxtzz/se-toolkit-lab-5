@@ -49,13 +49,138 @@ tr:nth-child(even) {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .app-header h1 {
   margin: 0;
 }
 
+.header-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.header-nav button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header-nav button:hover {
+  background: #f5f5f5;
+}
+
+.header-nav button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
 .btn-disconnect {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
+}
+
+/* Dashboard */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.lab-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lab-selector label {
+  font-weight: 500;
+}
+
+.lab-selector select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.error-banner {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #900;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.chart-section,
+.table-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-section h2,
+.table-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.chart-placeholder,
+.table-placeholder {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.pass-rates-table {
+  width: 100%;
+}
+
+.pass-rates-table th,
+.pass-rates-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.pass-rates-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.pass-rates-table tbody tr:hover {
+  background: #f9f9f9;
 }
